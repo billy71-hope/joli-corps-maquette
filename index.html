@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joli-Corps – Cabinet de Massage à Cotonou</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Cabinet de Massage Joli-Corps à Cotonou : Shiatsu, relaxation, réflexologie, drainage lymphatique, soins amincissants. Réservez sur WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0f4d3f; --green-2:#1c6b58; --mint:#e3f1ec;
+  --cream:#faf6ef; --sand:#efe5d3; --gold:#c49a52;
+  --ink:#1d2622; --muted:#5d6b65; --white:#fff;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.trust b,.forfait .big{font-family:"Cormorant Garamond",serif;line-height:1.1;font-weight:600;font-variant-numeric:lining-nums}
+h2{font-size:clamp(2rem,4vw,2.8rem);color:var(--green);margin-bottom:12px}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px}
+.lead{color:var(--muted);max-width:620px}
+section{padding:88px 0}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(250,246,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--sand)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:700;color:var(--green)}
+.logo span{color:var(--gold)}
+.links{display:flex;gap:28px;font-size:.92rem;color:var(--muted)}
+.links a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:var(--white);padding:13px 22px;border-radius:999px;font-weight:600;font-size:.95rem;transition:.2s}
+.btn:hover{background:var(--green-2);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn svg{width:18px;height:18px}
+.nav .btn{padding:10px 18px}
+
+/* hero */
+.hero{padding:56px 0 88px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);color:var(--green);margin-bottom:20px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{font-size:1.08rem;color:var(--muted);margin-bottom:30px;max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:26px;margin-top:36px;flex-wrap:wrap}
+.trust div{font-size:.88rem;color:var(--muted)}
+.trust b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.9rem;color:var(--green)}
+.hero-img{position:relative}
+.hero-img img{border-radius:220px 220px var(--radius) var(--radius);height:540px;width:100%;object-fit:cover;box-shadow:0 30px 60px -30px rgba(15,77,63,.45)}
+.badge{position:absolute;left:-24px;bottom:40px;background:var(--white);padding:16px 20px;border-radius:14px;box-shadow:0 14px 34px -12px rgba(0,0,0,.25);font-size:.88rem}
+.badge b{color:var(--green);font-size:1.05rem}
+.stars{color:var(--gold);letter-spacing:2px}
+
+/* services */
+.services{background:var(--white)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.card{background:var(--cream);border:1px solid var(--sand);border-radius:var(--radius);padding:28px;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(15,77,63,.4);border-color:transparent}
+.card .ico{width:46px;height:46px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-size:1.3rem;margin-bottom:18px}
+.card h3{font-size:1.55rem;color:var(--green);margin-bottom:4px}
+.card .tag{font-size:.82rem;color:var(--gold);font-weight:600;margin-bottom:12px}
+.card ul{list-style:none;font-size:.92rem;color:var(--muted)}
+.card li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed var(--sand)}
+.card li:last-child{border:0}
+.card li span:last-child{color:var(--ink);font-weight:500}
+
+/* forfait */
+.forfait{background:var(--green);color:var(--white);border-radius:28px;padding:56px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.forfait::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:rgba(196,154,82,.18)}
+.forfait h2{color:var(--white)}
+.forfait p{color:#cfe3dc}
+.forfait .big{font-family:"Cormorant Garamond",serif;font-size:4.4rem;color:var(--gold);line-height:1}
+.forfait .btn{background:var(--gold);color:var(--green)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px;margin-top:44px}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:14px}
+.gallery img:first-child{grid-row:span 2}
+
+/* reviews */
+.reviews{background:var(--mint)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.rev{background:var(--white);border-radius:var(--radius);padding:28px}
+.rev p{font-family:"Cormorant Garamond",serif;font-size:1.35rem;color:var(--ink);margin:12px 0 18px;line-height:1.35}
+.rev small{color:var(--muted)}
+
+/* infos */
+.info-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;margin-top:44px}
+.hours{background:var(--white);border-radius:var(--radius);padding:30px;border:1px solid var(--sand)}
+.hours li{list-style:none;display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--sand)}
+.hours li:last-child{border:0}
+.closed{color:#b0563f}
+.contact{margin-top:24px;display:grid;gap:10px;font-size:.95rem}
+.map{border-radius:var(--radius);overflow:hidden;min-height:380px;border:1px solid var(--sand)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0}
+
+footer{background:var(--ink);color:#aab6b1;padding:40px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer .logo{color:var(--white)}
+
+.wa{position:fixed;right:20px;bottom:20px;z-index:30;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 28px -8px rgba(37,211,102,.7)}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+@media (max-width:900px){
+  .links{display:none}
+  .hero-grid,.forfait,.info-grid{grid-template-columns:1fr}
+  .hero-img img{height:420px}
+  .badge{left:12px}
+  .grid,.rev-grid{grid-template-columns:1fr 1fr}
+  .forfait{padding:36px}
+}
+@media (max-width:600px){
+  section{padding:64px 0}
+  .wrap{padding:0 16px}
+  .nav .btn{display:none}
+  .grid,.rev-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:200px 140px 140px}
+  .gallery img:first-child{grid-column:span 2;grid-row:auto}
+}
+</style>
+</head>
+<body>
+<div style="background:#1d2622;color:#e3f1ec;text-align:center;font-size:.8rem;padding:8px 16px">Maquette de démonstration proposée par Hope Silas · site non officiel</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">Joli<span>·</span>Corps</a>
+    <nav class="links">
+      <a href="#soins">Nos soins</a>
+      <a href="#forfaits">Forfaits</a>
+      <a href="#galerie">Le cabinet</a>
+      <a href="#avis">Avis</a>
+      <a href="#infos">Horaires & accès</a>
+    </nav>
+    <a class="btn" href="https://wa.me/2290197177070?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20massage" target="_blank" rel="noopener">Réserver</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Cabinet de massage · Cotonou</div>
+      <h1>Le massage détend,<br><em>dénoue</em> et apaise.</h1>
+      <p>Shiatsu, relaxation, réflexologie, drainage lymphatique et soins amincissants, réalisés par des mains expertes. Offrez à votre corps le moment qu'il mérite.</p>
+      <div class="cta">
+        <a class="btn" href="https://wa.me/2290197177070?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20massage" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>
+          Réserver sur WhatsApp</a>
+        <a class="btn ghost" href="#soins">Voir nos soins</a>
+      </div>
+      <div class="trust">
+        <div><b>6</b>types de soins</div>
+        <div><b>4,1★</b>22 avis Google</div>
+        <div><b>6j/7</b>9h – 19h30</div>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rmj6EzatEAv6DD4-A9xgfY_bmFCczekch74AWNkp90UXE-092QEVj6ow9vs6vas1jNpUq6fjxV6My1kswcSIrqqNl6Qd_cIMrT0ubd39ldk3mSJe5yET_lnF-k8rvQMFS9dkW4=w1200" alt="Cabine de massage Joli-Corps">
+      <div class="badge"><span class="stars">★★★★☆</span><br><b>« Massage très relaxant ! »</b><br><small>Avis client Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="soins">
+  <div class="wrap">
+    <div class="eyebrow">Nos soins</div>
+    <h2>Un soin pour chaque besoin</h2>
+    <p class="lead">Corps complet ou zones ciblées (dos, jambes), choisissez la durée qui vous convient. Tarifs communiqués sur demande via WhatsApp.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🌿</div><h3>Relaxation</h3><div class="tag">Détente musculaire</div>
+        <ul><li><span>Complet</span><span>1 h</span></li><li><span>Complet</span><span>45 min</span></li><li><span>Dos ou jambes</span><span>20 min</span></li></ul></div>
+      <div class="card"><div class="ico">☯️</div><h3>Shiatsu</h3><div class="tag">Équilibre énergétique</div>
+        <ul><li><span>Complet</span><span>1 h 10</span></li><li><span>Dos ou jambes</span><span>30 min</span></li><li><span>Matelas de Shiatsu</span><span>17 min</span></li></ul></div>
+      <div class="card"><div class="ico">🦶</div><h3>Réflexologie</h3><div class="tag">Stimulation des fonctions organiques</div>
+        <ul><li><span>Complet</span><span>1 h</span></li><li><span>Complet</span><span>45 min</span></li><li><span>Dos ou jambes</span><span>20 min</span></li></ul></div>
+      <div class="card"><div class="ico">💧</div><h3>Drainage lymphatique</h3><div class="tag">Circulation & élimination</div>
+        <ul><li><span>Complet (classique ou pompé-chassé)</span><span>1 h 10</span></li><li><span>Dos ou jambes</span><span>30 min</span></li></ul></div>
+      <div class="card"><div class="ico">✨</div><h3>Amincissant</h3><div class="tag">Cellulite & graisse</div>
+        <ul><li><span>Jambes, ventre, taille, bras, fesses</span><span>1 h</span></li><li><span>Jambes, ventre, taille</span><span>45 min</span></li><li><span>Partiel</span><span>20 min</span></li></ul></div>
+      <div class="card"><div class="ico">🧠</div><h3>Massage crânien</h3><div class="tag">Détente nerveuse</div>
+        <ul><li><span>La séance</span><span>20 min</span></li><li><span>Idéal contre le stress</span><span>✓</span></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="forfaits">
+  <div class="wrap">
+    <div class="forfait">
+      <div>
+        <div class="eyebrow">Forfaits</div>
+        <h2>Prenez soin de vous dans la durée</h2>
+        <p>Tous nos soins existent en forfait de 10 séances (complètes ou partielles). Votre carte reste valable 3 mois.</p>
+      </div>
+      <div>
+        <div class="big">10</div>
+        <p style="margin:6px 0 22px">séances · carte valable 3 mois</p>
+        <a class="btn" href="https://wa.me/2290197177070?text=Bonjour%2C%20je%20souhaite%20des%20infos%20sur%20les%20forfaits%2010%20s%C3%A9ances" target="_blank" rel="noopener">Demander le tarif</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galerie" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Le cabinet</div>
+    <h2>Un espace calme, au cœur de Cotonou</h2>
+    <div class="gallery">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RS2s4GRBCMM5U4jlfvSJ0XYiMCe1Wsp-Kyjke2an-ZcFHfWhLRg6WDXcJwFMMwqcg1m45QQLQVEY4toa8yHUYcYUdATl-EcJL1x4_96qnujvjBVuLxqs8yZohFOGFE5HV8_F_vSA=w1200" alt="Salle de massage">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sw9qqfmfwTVTgcKj3y6Prj1ae6ICgQ5k5L3nW4xmNn5N2khBaRk7lxZszBGekQHMomK4Qpcm6y4nYFIDedHiMZjHdL6GrTiEEpjyxOPA9WOPPJPqO6aU0o2e5br6W3a7vkYvYIGw=w800" alt="Accueil du cabinet">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIHqRpubVXBwumIXQbGKZ4E0_F-ScAT0JPBKjxwCmENzQHjOtpdBLq_-bMhofn_ct0ehw57Vf7AKZmPL2CBEOBMDr793Pv9ZlGni3Yo1X72pk7Tvcvm-Wie8W4HPcovvE7HGqHlg=w800" alt="Certificat de Shiatsu">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sa3-nxVA-VnJNawmdxVfdeWMJch--2t0fvFAuiMjhes_TyPi-WKsI6rNhDii-g5V-u_UTZ0uG6mci3MdMC_2nZOrUSASwIAWy0oB0Sjt7mV6Hm09sZ55ZIWTo6HZfTXHSzhN93=w800" alt="Entrée du cabinet">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T446QHbfAPBLTTi_bcrNwtseiUpaPONqo71z2OItZR4FQdq_0yHi0Fuk9FnKtveW1AX3lCVmBJfHdtqH98C4Z68c90z0xMoK0KWeDhqg5mbdPKml4yz5N2FzAqk5ZLqgpJkGaLig=w800" alt="Enseigne Joli-Corps">
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="avis">
+  <div class="wrap">
+    <div class="eyebrow">Ils nous font confiance</div>
+    <h2>Ce que disent nos clients</h2>
+    <div class="rev-grid">
+      <div class="rev"><p>« Massage de qualité. Les gestes sont pro. J'y vais autant que je peux. »</p><small>Marion S. · Google</small></div>
+      <div class="rev"><p>« Massage formidable, très professionnel et de qualité. »</p><small>Christophe · Google</small></div>
+      <div class="rev"><p>« Massage très relaxant ! »</p><small>Client · Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap">
+    <div class="eyebrow">Horaires & accès</div>
+    <h2>Venez nous voir</h2>
+    <div class="info-grid">
+      <div class="hours">
+        <ul>
+          <li><span>Lundi – Vendredi</span><span>9h00 – 19h30</span></li>
+          <li><span>Samedi</span><span>9h00 – 19h30</span></li>
+          <li><span>Dimanche</span><span class="closed">Fermé</span></li>
+        </ul>
+        <div class="contact">
+          <div>📍 Rue 954B (994W+X8G), Cotonou</div>
+          <div>📞 +229 01 97 17 70 70</div>
+        </div>
+        <div style="margin-top:22px"><a class="btn" href="https://wa.me/2290197177070" target="_blank" rel="noopener">Écrire sur WhatsApp</a></div>
+      </div>
+      <div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=6.3574324,2.3958367&z=16&output=embed" title="Plan d'accès"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><span class="logo">Joli·Corps</span><br>Cabinet de massage · Cotonou</div>
+    <div>Maquette proposée par Hope Silas</div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/2290197177070?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20massage" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>
+</a>
+
+</body>
+</html>
